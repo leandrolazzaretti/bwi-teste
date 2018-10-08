@@ -1,0 +1,842 @@
+@font-face {
+    font-family: 'DINNextLTPro-Regular';
+    src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Regular.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Regular.woff') format('woff'), url('../fonts/DINNextLTPro-Regular.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Regular.svg#DINNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'DINNextLTPro-Light';
+    src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Light.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Light.woff') format('woff'), url('../fonts/DINNextLTPro-Light.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'DINNextLTPro-Bold';
+    src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Bold.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Bold.woff') format('woff'), url('../fonts/DINNextLTPro-Bold.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* *********************************** layout ********************************* */
+
+html, body{/*editando multiplas classes ao mesmo tempo*/
+    height: 100%;
+}
+
+body {
+    font-family: DINNextLTPro-Light;
+    overflow-x: hidden;/*remove a barra de rolagem da posição X direto no BODY, pois dentro dele está todo o nosso Front-End*/
+    text-align: justify !important;
+}
+
+.parallax {
+    min-height: 100%;
+}
+
+.parallax_banner{
+    height: 80vh;
+}
+
+p{
+    font-size: 16px;
+}
+/* ********************************* Barra de navegação ******************************** */
+
+nav .container{
+    width: 85%;
+}
+nav.navbar-transparente {
+    height: 120px;
+    padding: 15px 0px;
+    background: rgba(0,0,0, 0.5);
+    border: none;
+}
+
+.menu_logo{
+    float: left;
+    padding: 25px 15px 8px 35px;
+    background: #fff;
+    transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    transition: 1s;
+}
+
+.menu_logo_alterado{
+    transition: all 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-brand {
+    height: 100%;
+}
+
+.img-logo{
+    color: transparent;
+    float: left;
+    transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+}
+
+#barra-navegacao{
+    width: 100%;
+    margin-top: 15px;
+}
+
+#barra-navegacao a{
+    width: 100%;
+    float: left;
+    color: white;
+    margin-top: 25px;
+    padding: 5px 8px 0px 10px;
+    transition: 1s;
+}
+
+.menu_itens_span{
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
+}
+
+#barra-navegacao li{
+    padding-right: 30px;
+    transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+}
+
+#barra-navegacao a:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #46ab7e;
+    transition: 0.5s;
+}
+
+.menu_item_selecionado{
+    background: #fff;
+    color: #46ab7e;
+}
+
+.menu_item_preto{
+    margin-top: 11px !important;
+    color: #000 !important;
+}
+
+.menu_item_preto:hover{
+    color: #46ab7e !important;
+}
+
+nav.navbar.bootsnav {
+    transition: all 1s;
+}
+
+.nav_ready{
+    background: #fff !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.carousel-indicators {
+    z-index: 9 !important;
+}
+
+.menu_active {
+    width: 100%;
+    height: 25px;
+    background: #fff !important;
+    color: #46ab7e !important;
+}
+
+/* ******************************** INDEX_SECTION_1 ******************************** */
+
+#index_section1{
+    width: 100%;
+    float: left;
+}
+
+.image_section1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.text_section1{
+    position: absolute;
+    width: 100%;
+    float: left;
+    color: #fff;
+    top: 40%;
+    padding-left: 20%;
+}
+
+.text_section1 h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.text_section1 h3{
+    margin: -10px 0 15px 0;
+}
+
+.text_section1 h4{
+    margin: 2;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+}
+
+.text_section1_rotate{
+    position: absolute;
+    width: 100%;
+    float: left;
+    color: #fff;
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    text-align: center;
+    top: 49%;
+    right: 38%;
+}
+
+.text_section1_center{
+    margin: 0 0;
+}
+
+.text_section1_rotate h4{
+    letter-spacing: 0.2em;
+    font-size: 8px;
+
+}
+
+.carousel-indicators li {
+    width: 40px;
+    height: 5px;
+    border-radius: 0px;
+    background: #fff;
+    opacity: 0.2;
+    transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+}
+.carousel-indicators .active {
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    opacity: 1;
+    margin: 1px;
+    transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+}
+
+/* ******************************** INDEX_SECTION_2 ******************************** */
+
+#index_section2{
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#index_section2 p{
+    padding: 20px 20px 0 40px;
+    font-family: DINNextLTPro-Regular;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+}
+
+#index_section2 a{
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-family: DINNextLTPro-Regular;
+    background: #46ab7e;
+    font-weight: bold;
+    float: left;
+    transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+}
+
+#index_section2 .button_span{
+    margin-left: 40px;
+    padding: 4px 8px 2px 8px;
+    background: #46ab7e;
+    float: left;
+}
+
+#index_section2 .span_inclinado{
+    width: 100%;
+    float: left;
+    transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    
+}
+
+.image_section2{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    float: left;
+}
+
+.image_section2:hover .text_section2{
+    bottom: 80px;
+}
+
+.text_section2{
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    padding-left: 35px;
+    transition: 0.5s;
+}
+
+.text_section2 img{
+    float: left;
+    padding-top: 2px;
+    padding-right: 3px;
+    width: 16px;
+}
+
+.text_section2 h3{
+    margin: 0;
+    font-family: DINNextLTPro-Bold;
+    font-size: 33px;
+    color: #fff;
+    float: left;
+}
+
+/* ********** BACKGROUND_SECTION_1 / WHO_WE_ARE_SECTION_1 / CONTACT_SECTION1 / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_1 ********** */
+
+#background_section1, #who_we_are_section1, #contact_section1 , #our_values_section1, #products_section1{
+    width: 100%;
+    float: left;
+}
+
+/* ********** BACKGROUND_SECTION_2 / WHO_WE_ARE_SECTION_2 / CONTACT_SECTION2 / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_2 *********** */
+
+#background_section2, #who_we_are_section2, #contact_section2, #our_values_section2, #products_section2{
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+
+
+#background_section2 h1, #background_section2 h3,  #who_we_are_section2 h1,  #who_we_are_section2 h3, #contact_section2 h1, #contact_section2 h3, #our_values_section2 h1, #our_values_section2 h3, #products_section2 h1{
+    font-family: DINNextLTPro-Bold;
+    color: #000;
+    width: 100%;
+    float: left;
+}
+
+#background_section2 p, #who_we_are_section2 p, #our_values_section2 p, #products_section2 p{
+    font-family: DINNextLTPro-Regular;
+    color: #646464;
+    width: 100%;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+/* ******************************** WHO_WE_ARE_SECTION_2  / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_2 ******************************** */
+
+#who_we_are_section2 span{
+    width: 100%;
+    float: left;
+    margin: 10px 0 20px 0;
+}
+
+.who_we_are_text_section2_rotate, .our_values_section2_rotate, .products_section2_rotate{
+    position: absolute;
+    float: left;
+    width: 400px;
+
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 210px;
+    right: 76%;
+    text-align: center;
+}
+
+.who_we_are_text_section2_rotate h4, .our_values_section2_rotate h4, .products_section2_rotate h4{
+    color: #000;
+    font-size: 10px;
+    letter-spacing: 0.8;
+    font-family: DINNextLTPro-Light;
+}
+
+/* ******************************** CONTACT_SECTION_2 ******************************** */
+
+.contact_section2_rotate{
+    position: absolute;
+    width: 400px;
+    float: left;
+    
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 210px;
+    left: 69%;
+    text-align: center;
+}
+
+.contact_section2_rotate h4{
+    color: #000;
+    font-size: 10px;
+    letter-spacing: 0.8;
+    font-family: DINNextLTPro-Light;
+}
+
+#contact_section2 h3{
+    margin-bottom: 0px;
+}
+
+#contact_section2 p{
+    width: 100%;
+    float: left;
+    font-family: DINNextLTPro-Regular;
+    color: #646464;
+    margin: 0;
+}
+
+
+/* ******************************** PRODUCTS_SECTION_2 ******************************** */
+
+.products_div{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    margin-bottom: 2px;
+}
+
+.products_div_buttom{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #000;
+    margin-bottom: 2px;
+}
+
+.image_products{
+    width: 100%;
+    float: left;
+    height: 358px;
+}
+
+.image_products_img{
+    width: 100%;
+    height: 100%;
+}
+
+#products_section2 h3{
+    position: absolute;
+    font-family: DINNextLTPro-Bold;
+    font-size: 23px;
+    padding-left: 25px;
+    padding-top: 5px;
+    color: #fff;
+    width: 100%;
+    float: left;
+}
+
+#products_section2 h1{
+    position: absolute;
+    font-family: DINNextLTPro-Bold;
+    color: #000;
+    width: 100%;
+    float: left;
+}
+
+#products_section2 .col-md-3{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#products_section2 .col-md-7{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#products_section2 h5{
+    font-family: DINNextLTPro-Bold;
+    font-size: 28px;
+    color: #000;
+    width: 100%;
+    padding-top: 360px;
+    padding-left: 10px; 
+    margin-bottom: 0px;
+}
+
+#products_section2 p{
+    width: 100%;
+    float: left;
+    font-family: DINNextLTPro-Regular;
+    margin-top: 0px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#products_section2 span{
+    float: right;
+    margin-top: -25px;
+}
+
+#products_section2 a{
+    text-decoration: none;
+}
+
+.products_section2_rotate{
+    top: 270px;
+}
+
+#products_section2 .panel-body{
+    border-bottom: 1px solid #000;
+}
+
+
+
+/* ******************************** RODAPÉ ******************************** */
+
+footer{
+    width: 100%;
+    float: left;
+    background: #000;
+    padding: 70px 0px 70px 0px;
+    position: relative;
+    z-index: 3;
+}
+#rodape .row{
+    text-align: left;
+}
+
+#rodape h4{
+    width: 100%;
+    float: left;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+#rodape .col-md-2 a:hover{
+    text-decoration: none;
+    
+} 
+
+#rodape a{
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+#rodape a:focus{
+    color: #46ab7e !important;
+}
+
+.nav>li>a:focus{
+    background-color: transparent !important; 
+}
+
+#rodape .nav a{
+    color: rgb(182, 181, 181);
+}
+
+#rodape .nav a:hover{
+    color: #46ab7e;
+    background: none;
+}
+
+#rodape p{
+    letter-spacing: 0.05em;
+    color: rgb(182, 181, 181);
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#rodape .col-md-4 img{
+    float: left;
+}
+
+#rodape .icons_rodape{
+    width: 100%;
+    float: left;
+}
+
+#rodape .icons_rodape a{
+    width: 30px;
+    padding-right: 5px;
+}
+
+.desenvolvedor{
+    width: 100%;
+    float: left;
+    color: rgb(182, 181, 181);
+}
+
+.link_desenvolvedor{
+    width: auto;
+    float: none !important;
+    color: rgb(182, 181, 181);
+    text-decoration: none !important;
+}
+
+.link_desenvolvedor:hover{
+    color: #46ab7e;
+}
+
+/* ********************* Media queries ******************** */
+
+@media screen and (min-width: 768px){
+    .navbar-right{
+        margin-right: -75px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #index_section1 .text_section1 h1{
+        font-size: 20px;
+    }
+
+    /************** products section 2 **************/
+
+    #products_section2 h5 {
+        font-size: 20px;
+    }
+
+    #products_section2 .products_div h1{
+        padding-left: 20px;
+    }
+
+    #index_section2 .image_section2{
+        height: 450px;
+    }
+
+    .text_section1_center{
+        width: 80%;
+        text-align: left;
+    }
+    
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+    #index_section1 .text_section1 h1{
+        font-size: 30px;
+    }
+
+    #index_section2 .image_section2{
+        height: 350px;
+    }
+
+    #index_section2 p{
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    nav.navbar.bootsnav.no-background{
+        background-color: transparent !important;
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    /************** rodapé **************/
+    #rodape .row{
+        text-align: center;
+    }
+
+    #rodape a{
+        padding: 10px 0 0 0;
+    }
+
+    #rodape br{
+        display: none;
+    }
+
+   #rodape .col-md-4{
+        margin-top: 40px;
+        padding-top: 50px !important;
+   }
+
+    #rodape .icons_rodape{
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    #rodape .logo_rodape_centralizado{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /************** barra de navegação **************/
+    .navbar-header{
+        float: right;
+        padding: 15px 20px 0px 20px;
+        transition: 1s;
+    }
+
+    .navbar_header_alterado{
+        padding-top: 5px;
+    }
+
+    .navbar-brand{
+        padding: 0px 0px;
+    }
+
+    .menu_logo{
+        padding: 20px 0 10px 0;
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .menu_logo a img{
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .img-logo{
+        max-width:97px;
+        max-height:36px;
+        width: auto;
+        height: auto;
+    }
+
+    nav .container{
+        padding-left: 0px;
+    }
+
+    #barra-navegacao a{
+        color: black;
+        border-bottom: none;
+        border-top: none
+    }
+
+    #barra-navegacao li{
+        padding-right: 0;
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .container>.navbar-collapse{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .menu_itens_span{
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    #barra-navegacao{
+        text-align: center;
+    }
+    #barra-navegacao ul li a{
+        margin-top: 0;
+        padding: 20px 0;
+    }
+
+    #barra-navegacao ul{
+        width: 100%;
+        overflow: hidden;
+        border-top: 1px solid  #e7e7e7;
+    }
+
+    .menu_item_preto{
+        margin-top: 0 !important;
+    }
+
+    .menu_logo_alterado{
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    nav.navbar.bootsnav .navbar-nav{
+        margin: 0 !important
+    }
+
+    .menu_active {
+        height: 60px;
+    }
+
+    /************** index section - 2 **************/
+
+    #index_section2 .button_span{
+        margin-bottom: 50px;
+    }
+
+    #index_section2{
+        padding-bottom: 0px;
+    }
+
+    #index_section2 .text_section2{
+        padding-left: 25px
+    }
+
+    #index_section2 .text_section2 h3{
+        font-size: 25px;
+    }
+
+    #index_section2 .text_section2 img{
+        width: 13px; 
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+
+
+     /************** index section - 2 **************/
+    #index_section2 p{
+        height: 150px;
+    }
+}
+
+
+/* ******************** Fim Media queries  *********************** */
