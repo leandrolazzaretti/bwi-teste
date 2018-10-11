@@ -34,3 +34,17 @@ Route::get('/ourvalues', function () {
 Route::get('/products', function () {
     return view('products');
 })->name('products');
+
+
+Route::prefix('/admin')->group(function(){
+
+    Route::get('/', function () {
+        return view('admin/index');
+    })->name('index_admin');
+
+    Route::get('/background', function () {
+        return view('admin/background');
+    })->name('background_admin');
+
+});
+

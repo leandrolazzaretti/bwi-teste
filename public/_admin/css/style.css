@@ -1,0 +1,88 @@
+/* *********************************** Fonts ********************************* */
+@font-face {
+    font-family: 'GothamRnd-Book';
+    src:   url('../fonts/GothamRnd-Book.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'GothamRnd-Light';
+    src:   url('../fonts/GothamRnd-Light.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  /* *********************************** LAYOUT ********************************* */
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: 'GothamRnd-Light';
+    overflow-x: hidden;
+}
+
+.linha{
+    width: 100%;
+    float: left;
+}
+
+/* *********************************** MENU LATERAL ********************************* */
+
+.menu_lateral{
+    background: #272c33 !important;
+}
+
+.link_menu{
+    color: #c8c9ce !important;
+}
+
+.link_menu:hover{
+    color: #fff !important;
+}
+
+/* *********************************** INDEX ********************************* */
+
+.conteudo_admin{
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+.titulo_index{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    color: #46ab7e;
+    border: 2px solid #f1f1f1;
+    border-radius: 6px;
+}
+
+/* *********************************** BACKGROUND ********************************* */
+
+.titulo_admin{
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    padding: 20px;
+    color: #46ab7e;
+    border: 2px solid #f1f1f1;
+    border-radius: 6px;
+}
+
+.painel_admin{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    border: 2px solid #f1f1f1;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+}
+
+/* *********************************** BOTÕES ********************************* */
