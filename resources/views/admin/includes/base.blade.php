@@ -120,11 +120,17 @@
                     trigger.removeClass('is-open');
                     trigger.addClass('is-closed');
                     isClosed = false;
+                    $('.hamburger').removeClass('hamburger_alterado');
+                    $('.botao_alterado').removeClass('fa-arrow-right');
+                    $('.botao_alterado').addClass('fa-bars');
                 } else {   
                     overlay.show();
                     trigger.removeClass('is-closed');
                     trigger.addClass('is-open');
                     isClosed = true;
+                    $('.hamburger').addClass('hamburger_alterado');
+                    $('.botao_alterado').removeClass('fa-bars');
+                    $('.botao_alterado').addClass('fa-arrow-right');
                 }
             }
             

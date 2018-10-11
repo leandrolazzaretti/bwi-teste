@@ -179,6 +179,12 @@ html { height: 100%;}
     border: none;
     border-radius: 25px;
     margin-left: -20px;
+    transition: 0.3s !important;
+}
+
+.hamburger_alterado{
+    margin-left: 10px !important;
+    transition: 0.3s !important;
 }
 
 .link_alterado{
